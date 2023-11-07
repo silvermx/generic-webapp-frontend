@@ -1,7 +1,7 @@
 
 ## Nuxt 3 Project
 
-This sample Vue application is part of a Terraform project to create a website template with a three-tier architecture and a microservices approach on Google Cloud Platform. It is a simple website with a button to retrieve a list of users and display it on the page.
+This sample Nuxt 3 application is part of a Terraform project to create a website template with a three-tier architecture and a microservices approach on Google Cloud Platform. It is a simple website with a button to retrieve a list of users and display it on the page.
 
 ### Installation
 
