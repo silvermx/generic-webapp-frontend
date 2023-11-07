@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <button @click="loadUsers">Load Users</button>
-    <ul>
-      <li v-for="user in users" :key="user.id">{{ user.email }}</li>
-    </ul>
+  <div id="app">
+    <img alt="Vue logo" src="/GCP-logo.png">
+    <h1>Nuxt3 - Example to Call a Rest API Backend</h1>
+    <p>By: Silver Nunez - Cloud Architect 
+      <a href="https://www.linkedin.com/in/silver-nunez/" target="_blank">( LinkedIn )</a> 
+    </p>
+    
+    <button @click="loadUsers">Get Users</button>
+
+    <div v-for="user in users" :key="user.email">
+      <h2>Email: {{ user.email }}</h2>
+      <p>First Name: {{ user.firstName }}</p>
+      <p>Last Name: {{ user.lastName }}</p>
+    </div>
+
   </div>
 </template>
 
@@ -15,7 +25,6 @@ export default {
   methods: {
     async loadUsers() {
       try {
-        // Make a request to the server function created in step 1
         const response = await fetch('/api/users');        
         this.users = await response.json();
         console.log("List of users \n" + this.users)
@@ -31,3 +40,14 @@ export default {
   },
 };
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
