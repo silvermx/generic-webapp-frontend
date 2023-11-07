@@ -28,4 +28,9 @@ COPY --from=build /src/.output /src/.output
 # Optional, only needed if you rely on unbundled dependencies
 # COPY --from=build /src/node_modules /src/node_modules
 
+# Set the environment variable into the Nuxt configuration
+COPY update-env.sh /src/update-env.sh
+RUN chmod u+x /src/update-env.sh
+ENTRYPOINT ["/src/update-env.sh"]
+
 CMD [ "node", ".output/server/index.mjs" ]

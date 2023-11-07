@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
-    apiBase: process.env.NUXT_APP_INTERNAL_LB_URL
+    apiBase: "NUXT_APP_INTERNAL_LB_URL"
   }
 })
