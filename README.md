@@ -1,75 +1,30 @@
-# Nuxt 3 Minimal Starter
 
+## Nuxt 3 Project
+
+This sample Vue application is part of a Terraform project to create a website template with a three-tier architecture and a microservices approach on Google Cloud Platform. It is a simple website with a button to retrieve a list of users and display it on the page.
+
+### Installation
+
+To install this project, clone the repository and run `npm install`.
+
+### Usage
+
+To start the development server, run `npm run dev`. The app will be available at `http://localhost:3000`.
+
+To build the production version of the app, run `npm run build`. The built files will be placed in the `dist` directory.
+
+### Lints and fixes files
+
+npm run lint
+
+
+### Support
+
+If you have any questions or problems with this project, please feel free to open an issue on GitHub (https://github.com/silvermx).
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### Roadmap
 
-Make sure to install the dependencies:
+Here are some ideas for future features:
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+* Add authentication
