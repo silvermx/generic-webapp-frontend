@@ -27,7 +27,6 @@ export default {
       try {
         const response = await fetch('/api/users');        
         this.users = await response.json();
-        console.log("List of users \n" + this.users)
       } catch (err) {
         console.error('Failed to fetch users', err);
       }
